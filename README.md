@@ -8,4 +8,5 @@ push 4 fail
 push 5 fail
 push 6 fail
 push 7 fail
-push 8 
+push 8 fail
+push 9
