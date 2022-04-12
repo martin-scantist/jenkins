@@ -6,4 +6,5 @@ push 2 fail
 push 3 fail
 push 4 fail
 push 5 fail
-push 6
+push 6 fail
+push 7
