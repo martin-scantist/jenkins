@@ -4,12 +4,12 @@ WORKDIR /vsce
 
 USER root
 
-RUN apt update
-RUN apt upgrade -y
+RUN apt-get update
+RUN apt-get upgrade -y
 # install nodejs
-RUN apt install -y curl
+RUN apt-get install curl -y
 RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
-RUN apt install -y nodejs
+RUN apt-get install nodejs -y
 RUN npm install -g vsce
 
 # RUN export VERSION=$(npm run version)
@@ -17,5 +17,5 @@ RUN npm install -g vsce
 # RUN echo "TAG_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
 # RUN vsce publish -p ${{secrets.VSCE_PAT}}
 
-CMD [ "node", "server.js" ]
+CMD [ "node", /vsce/"server.js" ]
 # EXPOSE 3000
