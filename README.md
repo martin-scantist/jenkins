@@ -1,16 +1,3 @@
 # jenkins
 
-To create a pipeline to triggers a build to mongodb
-Push 1 fail
-push 2 fail
-push 3 fail
-push 4 fail
-push 5 fail
-push 6 fail
-push 7 fail
-push 8 fail
-push 9 fail
-push 10 success
-push 11 success
-push 12 success
-push 13
+To convert yaml file to Jenkinsfile
