@@ -1,3 +1,3 @@
 #! /bin/bash
 
-echo cat /etc/
+echo cat /etc/os-release
