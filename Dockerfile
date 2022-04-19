@@ -17,5 +17,5 @@ RUN npm install -g vsce
 # RUN echo "TAG_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
 # RUN vsce publish -p ${{secrets.VSCE_PAT}}
 
-CMD [ "node", /vsce/"server.js" ]
+CMD sleep 10
 # EXPOSE 3000
